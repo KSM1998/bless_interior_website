@@ -322,6 +322,10 @@ a:focus,
 	width: 100%;
 }
 
+.container {
+    max-width: 1400px;
+}
+
 .mu-hompage-logo {
 	background image = url(https://1.bp.blogspot.com/-VZEtoB9bFDI/X-Xm5KGXk5I/AAAAAAAAAMk/ca7Kd_XzxDA2sFO8ucC40Zz-rJeZUTCUgCLcBGAsYHQ/s130/%25EB%25B8%2594%25EB%25A0%2588%25EC%258A%25A4%2B%25EC%259D%25B8%25ED%2585%258C%25EB%25A6%25AC%25EC%2596%25B4%2B%25EB%25A9%2594%25EC%259D%25B8%2B%25EB%25A1%259C%25EA%25B3%25A0.PNG)
 	width : 145;
@@ -394,15 +398,15 @@ a:focus,
 
 .mu-navbar-nav li a {
 	color: #fefeff;
-	display: block;
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding: 9px 18px;
-	border-radius: 15px;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+    display: block;
+    font-size: 24px;
+    font-weight: 550;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 13px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 
