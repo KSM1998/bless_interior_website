@@ -315,21 +315,34 @@ a:focus,
 /* HEADER */
 /*--------------------*/
 
-#mu-hero {
-	background-color: #8B0000;
-	display: inline;
-	float: left;
-	width: 100%;
+.navbar {
+	width : 1800px;
+	height : 105px;
 }
 
-.container {
+.container-fluid {
+	list-style : none;
+}
+
+#bless_interior_header navbar a {
+	list-style : none;
+}
+
+.nav-item dropdown{
+	list-style : none;
+}
+
+.header_container {
     max-width: 1400px;
 }
 
-.mu-hompage-logo {
-	background image = url(https://1.bp.blogspot.com/-VZEtoB9bFDI/X-Xm5KGXk5I/AAAAAAAAAMk/ca7Kd_XzxDA2sFO8ucC40Zz-rJeZUTCUgCLcBGAsYHQ/s130/%25EB%25B8%2594%25EB%25A0%2588%25EC%258A%25A4%2B%25EC%259D%25B8%25ED%2585%258C%25EB%25A6%25AC%25EC%2596%25B4%2B%25EB%25A9%2594%25EC%259D%25B8%2B%25EB%25A1%259C%25EA%25B3%25A0.PNG)
-	width : 145;
-	height : 105;
+#navbarDropdownMenuLink{
+	list-style : none;
+}
+
+.homepage_logo_img {
+	width : 145px;
+	height : 105px;
 }
 
 .mu-logo-area {
@@ -381,22 +394,23 @@ a:focus,
 /* MENUE */
 /*--------------------*/
 
-.mu-navbar {
+.navbar {
 	padding: 20px 0;
 }
 
-.mu-navbar-nav {
+.navbar-undernav {
 	display: block;
 	text-align: right;
 	width: 100%;
 }
 
-.mu-navbar-nav li {
+.navbar-undernav li {
 	list-style: none;
 	display: inline-block;
 }
 
-.mu-navbar-nav li a {
+/**/
+.navbar-undernav li a {
 	color: #fefeff;
     display: block;
     font-size: 24px;
@@ -472,7 +486,7 @@ a:focus,
 	right: 0;
 	top: 0;
 	bottom: 0;
-	opacity: 0.8;
+	opacity: 0;
 	z-index: 10;
 }
 
@@ -903,21 +917,27 @@ a:focus,
 }
 
 .mu-filter-item-content {
-	background-color: #0091ea;
+	background-color: #778899;
 	position: absolute;
 	left: 16px;
 	top: 16px;
 	right: 16px;
 	bottom: 16px;
-	color: #fff;
+	color: #000000;
 	padding-top: 27%;
 	text-align: center;
+	font-size : 36px;
 	-webkit-transform: scale(0);
 	        transform: scale(0);
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-	opacity: 0.9;
+	-webkit-transition: all 0.4s;
+	transition: all 0.7s;
+	opacity: 0.8;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+
+.mu-filter-item-content h4 {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size : 45px;
 }
 
 .filtr-item:hover .mu-filter-item-content {
@@ -1481,8 +1501,20 @@ a:focus,
 	width: 100%;
 }
 
+#footer-header-text {
+	color : #000000;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size : 30px;
+}
+
+#footer-under-text {
+	color : #000000;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size : 20px;
+}
+
 .mu-footer-top {
-	background-color: #0277bd;
+	background-color: #FFFAFA;
 	display: inline;
 	float: left;
 	padding: 55px 0;
@@ -1502,8 +1534,9 @@ a:focus,
 }
 
 .mu-single-footer h3 {
-	color: #fff;
-	font-size: 18px;
+	color: #000000;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size : 20px;
 	text-transform: uppercase;
 	margin-bottom: 35px;
 }
@@ -1530,9 +1563,14 @@ a:focus,
 	margin-bottom: 15px;
 }
 
+.mu-single-footer ul {
+	list-style : none;
+}
+
 .mu-single-footer .list-unstyled li {
-	margin-bottom: 20px;
-	padding-bottom: 10px;
+	float : left;
+	list-style : none;
+	margin-left : 20px;
 }
 
 .mu-single-footer .list-unstyled li.media span {
@@ -1543,15 +1581,32 @@ a:focus,
 	line-height: 1.5;
 	margin-top: -5px;
 	margin-bottom: 4px;
-	font-size: 14px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 17px;
+	color : #000000;
 }
 
 .mu-single-footer .list-unstyled li.media a {
 	font-size: 12px;
 }
 
+.fa-home:before {
+    content: "\f015";
+    color: black;
+}
+
+.fa-phone:before {
+    content: "\f095";
+    color: black;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    color: black;
+}
+
 .mu-footer-bottom {
-	background-color: #004f7f;
+	background-color: #8B0000;
 	display: inline;
 	padding: 20px 0;
 	float: left;
@@ -2406,10 +2461,10 @@ a:focus,
 	border-radius: 50%;
 }
 
-.mu-comments-area .comments .commentlist li .media-body p {
+.mu-comments-area .comments .commentlist li {
 	margin-bottom: 0px;
 	font-size: 14px;
-	color: #323232;
+	color: #000000;
 }
 
 .mu-comments-area .comments .commentlist li .media-body .author-name {
@@ -3241,6 +3296,7 @@ a:focus,
 	.mu-single-footer {
 		margin: 15px 0;
 	}
+
 
 	/*About Us page*/
 
