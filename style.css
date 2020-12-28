@@ -315,19 +315,26 @@ a:focus,
 /* HEADER */
 /*--------------------*/
 
-.navbar {
-	width : 1800px;
-	height : 105px;
+.navbar {			
+	width : 980px;
+	height : 98px;
+	color : #800000;
 }
 
-.container-fluid {
-	list-style : none;
-}
 
 #bless_interior_header navbar a {
 	list-style : none;
 }
 
+.logo-image {
+	margin-left : 260px;
+	float : left;
+}
+
+.nav-menu-bar {
+	float : left;
+	width : 60%;
+}
 .nav-item dropdown{
 	list-style : none;
 }
@@ -338,11 +345,6 @@ a:focus,
 
 #navbarDropdownMenuLink{
 	list-style : none;
-}
-
-.homepage_logo_img {
-	width : 145px;
-	height : 105px;
 }
 
 .mu-logo-area {
@@ -395,7 +397,8 @@ a:focus,
 /*--------------------*/
 
 .navbar {
-	padding: 20px 0;
+	padding: 18px 0;
+	margin-left : 200px;
 }
 
 .navbar-undernav {
@@ -413,10 +416,10 @@ a:focus,
 .navbar-undernav li a {
 	color: #fefeff;
     display: block;
-    font-size: 24px;
+	font-family: 'Do Hyeon', sans-serif;
+    font-size: 28px;
     font-weight: 550;
-    text-transform: uppercase;
-    padding: 8px 20px;
+    padding: 12px 26px;
     border-radius: 13px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -1505,19 +1508,33 @@ a:focus,
 	color : #000000;
 	font-family: 'Do Hyeon', sans-serif;
 	font-size : 30px;
+	margin-bottom : 30px
+}
+
+#footer-header-blog-text {
+	color : #000000;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size : 30px;
+	margin-left : 55px;
+	margin-bottom : 30px
+}
+
+#naver-blog-icon-img {
+	width : 45px;
+	margin-left : 100px;
 }
 
 #footer-under-text {
 	color : #000000;
 	font-family: 'Do Hyeon', sans-serif;
-	font-size : 20px;
+	font-size : 23px;
 }
 
 .mu-footer-top {
 	background-color: #FFFAFA;
 	display: inline;
 	float: left;
-	padding: 55px 0;
+	padding: 20px 0;
 	width: 100%;
 }
 
@@ -1536,17 +1553,16 @@ a:focus,
 .mu-single-footer h3 {
 	color: #000000;
 	font-family: 'Do Hyeon', sans-serif;
-	font-size : 20px;
+	font-size : 30px;
 	text-transform: uppercase;
 	margin-bottom: 35px;
 }
 
 .mu-single-footer ul li {
-	border-bottom: 1px solid #1c85c4;
 	list-style: none;
 	margin-bottom: 10px;
 	padding-bottom: 12px;
-	font-size: 14px;
+	font-size: 17px;
 }
 
 .mu-single-footer ul li:last-child {
@@ -1565,6 +1581,11 @@ a:focus,
 
 .mu-single-footer ul {
 	list-style : none;
+}
+
+.col-md-3 {
+	flex : auto;
+	max-width : 33%;
 }
 
 .mu-single-footer .list-unstyled li {
