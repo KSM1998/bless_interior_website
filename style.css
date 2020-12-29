@@ -72,7 +72,7 @@ li {
 
 a { 
 	text-decoration: none;
-	color: #2f2f2f;  
+	color: white;  
 }
 
 a:hover,
@@ -321,85 +321,35 @@ a:focus,
 
 
 #main-top-container {
-	min-width: 1070px;
+	background : 
+		url("https://1.bp.blogspot.com/-SuvDSGBkIAg/X-rKEiLztdI/AAAAAAAAANw/pJEwEkLBpn4-55pfAtU8ehRlU_Otw6jMACLcBGAsYHQ/s1970/%25ED%2599%2588%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%2B%25EC%2582%25AC%25EC%25A7%2584%2B2.jpg") no-repeat;
+	
+	background-size : cover;
+	background-position : center center;
+	width : 100vw;
+	height : 100vh;
 }
 
-#top hd {
-	z-index: 10;
-    position: fixed;
-    min-width: 100%;
-    height: 80px;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+.navbar {
+	display : flex;
+	justify-content : space-around;
+	align-items : center;
 }
 
-#top-logo {
-    float: left;
-    margin-top: 28px;
+.navbar_logo{
+	font-size : 24px;
+	color : white;
 }
 
-#top-logo-h1 {
-	position: absolute;
-    font-size: 0;
-    line-height: 0;
-    overflow: hidden;
+.navbar_menu {
+	display : flex;
+	list-style : none;
+	padding-left : 0;
 }
-
-#top-header-menu-container {
-	position: relative;
-    margin: 0 auto;
-    width: 1070px;
-    zoom: 1;
+.navbar_menu li {
+	padding : 8px 12px;
+	
 }
-
-#top-menu-wrapper {
-	clear: both;
-    margin: 0 auto;
-    width: 100%;
-    height: 80px;
-    z-index: 1;
-}
-
-#top_logo {
-    float: left;
-    margin-top: 28px;
-}
-
-#top_logo a {
-    display: inline-block;
-}
-
-#top-menu {
-	float: right;
-    height: 60px;
-    margin-top: 20px;
-    font-family: 'notokr-medium';
-    background: rgba(0,0,0,0);
-}
-
-#top-menu li.list {
-    float: left;
-    display: inline-block;
-    position: relative;
-    z-index: 999;
-    min-width: 110px;
-    width: 110px;
-    height: 52px;
-    font-size: 16px;
-    color: #f6f1f3;
-    text-align: center;
-}
-
-#top-menu li a {
-    display: block;
-    overflow: visible;
-    padding: 10px 0 29px 0;
-    zoom: 1;
-    line-height: 21px;
-    color: #000000;
-    font-family: 'notokr-medium';
-}
-
-
 /*--------------------*/
 /* Main Banner */
 /*--------------------*/
