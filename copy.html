@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="robots" content="noindex,nofollow" />
+<title></title>
+
+<link rel="canonical" href="http://hu5792.s21.hdweb.co.kr">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_01/style.css?ver=171222">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_03/style.css?ver=171222">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_02/style.css?ver=171222">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/skin/latest/it_basic_01/style.css?ver=171222">
+
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/css/default.css?ver=171222">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/css/jquery-ui.css">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/css/user.css">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/css/page_style.css">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/sh_img/hd/top_menu/style.css">
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/sh_img/hd/aside/style.css">
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+/* 나눔스퀘어 */
+@font-face {
+	font-family: 'NanumSquare';
+	src: url(http://hu1100.s21.hdweb.co.kr/css/NanumSquareR.eot);
+	src: url(http://hu1100.s21.hdweb.co.kr/css/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/NanumSquareR.woff) format('woff'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/NanumSquareR.ttf) format('truetype');
+}
+
+/* 본고딕 */
+@font-face {
+	font-family: 'notokr-thin';
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-thin.eot);
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-thin.eot?#iefix) format('embedded-opentype'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-thin.woff2) format('woff2'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-thin.woff) format('woff'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-thin.ttf) format('truetype'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-thin.svg#notokr-thin) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'notokr-regular';
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-regular.eot);
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-regular.eot?#iefix) format('embedded-opentype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-regular.woff2) format('woff2'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-regular.woff) format('woff'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-regular.svg#notokr-regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-medium';
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-medium.eot);
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-medium.eot?#iefix) format('embedded-opentype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-medium.woff2) format('woff2'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-medium.woff) format('woff'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-medium.svg#notokr-medium) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-light';
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-light.eot);
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-light.eot?#iefix) format('embedded-opentype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-light.woff2) format('woff2'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-light.woff) format('woff'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-light.ttf) format('truetype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-light.svg#notokr-light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-demilight';
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-demilight.eot);
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-demilight.eot?#iefix) format('embedded-opentype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-demilight.woff2) format('woff2'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-demilight.woff) format('woff'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-demilight.ttf) format('truetype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-demilight.svg#notokr-demilight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-bold';
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-bold.eot);
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-bold.eot?#iefix) format('embedded-opentype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-bold.woff2) format('woff2'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-bold.woff) format('woff'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-bold.svg#notokr-bold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'notokr-black';
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-black.eot);
+    src: url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-black.eot?#iefix) format('embedded-opentype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-black.woff2) format('woff2'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-black.woff) format('woff'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-black.ttf) format('truetype'),
+         url(http://hu1100.s21.hdweb.co.kr/css/font/notokr-black.svg#notokr-black) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* 아리따 */
+@font-face {
+	font-family: 'arita-thin';
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Thin.eot);
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Thin.eot?#iefix) format('embedded-opentype'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Thin.woff) format('woff'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Thin.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-light';
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Light.eot);
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Light.eot?#iefix) format('embedded-opentype'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Light.woff) format('woff'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Light.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-medium';
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Medium.eot);
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Medium.eot?#iefix) format('embedded-opentype'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Medium.woff) format('woff'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Medium.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-semibold';
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-SemiBold.eot);
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-SemiBold.eot?#iefix) format('embedded-opentype'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-SemiBold.woff) format('woff'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-SemiBold.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-bold';
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Bold.eot);
+	src: url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Bold.eot?#iefix) format('embedded-opentype'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Bold.woff) format('woff'),
+		 url(http://hu1100.s21.hdweb.co.kr/css/font/arita-Bold.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+</style><!--[if lte IE 8]>
+<script src="http://hu5792.s21.hdweb.co.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://hu5792.s21.hdweb.co.kr";
+var g5_bbs_url   = "http://hu5792.s21.hdweb.co.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="http://hu5792.s21.hdweb.co.kr/js/jquery-1.8.3.min.js"></script>
+<script src="http://hu5792.s21.hdweb.co.kr/js/jquery-ui.js"></script>
+<script src="http://hu5792.s21.hdweb.co.kr/js/jquery.menu.js?ver=171222"></script>
+<script src="http://hu5792.s21.hdweb.co.kr/js/common.js?ver=171222"></script>
+<script src="http://hu5792.s21.hdweb.co.kr/js/wrest.js?ver=171222"></script>
+<script src="http://hu5792.s21.hdweb.co.kr/js/placeholders.min.js"></script>
+<!--[if lte IE 8]>
+<script src="http://hu5792.s21.hdweb.co.kr/js/selectivizr.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="http://hu5792.s21.hdweb.co.kr/js/font-awesome/css/font-awesome.min.css">
+<script src="http://hu5792.s21.hdweb.co.kr/sh_img/hd/aside/script.js"></script>
+<script src="http://hu5792.s21.hdweb.co.kr/sh_img/hd/top_menu/script.js"></script>
+</head>
+<body >
+<link type="text/css" href="/sh_img/hd/r_quickmenu/style.css" rel="stylesheet" />   
+<ul id="r_quickmenu">
+	<li><img src="/sh_img/hd/r_quickmenu/r_quickmenu_tit.png" alt="" /></li>
+	<li>
+		<a class="sms_link"><img src="/sh_img/hd/r_quickmenu/r_quickmenu_01.png" alt="" /></a>
+		<div class="quick_sms_wrap">	
+			<link type="text/css" href="/sh_img/make24/include_08/style.css" rel="stylesheet" />         
+
+
+<div id="include_08_wrap">
+	<div class="include_08_tit">SMS 상담</div>
+	
+	<form name="fquickform1" method="post" action="/sh_img/make24/include_08/include_08_update.php" autocomplete="off" onsubmit="return fquickform1_submit(this);">
+		<input type="hidden" name="form_url" value="/" />
+		<ul>
+			<li><input type="text" name="wr_name" id="sh_name" itname="성명" placeholder="성명" required class="nam_st"></li>
+			<li><input maxlength="12" type="text" name="sh_phone" required onkeyup='Num_ck(this);' placeholder="연락처"></li>
+			<li><textarea name="wr_content" class="ect_memo" placeholder="내용"></textarea></li>
+		</ul>
+		<div class="agrees">
+        	<a onclick="window.open('/sh_page/sh_privacy.php', 'window', 'width=600; height=800; left=150; top=0; scrollbars=no')" style="font-size:12px">개인정보 취급방침</a>
+			<label for="q_agree">동의</label> <input type="checkbox" name="q_agree" id="q_agree" />
+			<input type="submit" value="빠른 상담신청" id="btn_submit" accesskey='s'>
+		</div>
+
+	</form>
+</div>
+
+
+<script>
+function Num_ck(obj) { 
+    var val = obj.value; 
+    if(isNaN(val)) { 
+        alert("숫자만 입력해 주세요"); 
+        obj.value = val.replace(/[^0-9]/gi, ''); 
+    }  
+}
+
+function fquickform1_submit(f)
+{
+	if (!f.q_agree.checked) {
+		alert("개인정보취급방침에 동의 해주세요.");
+		f.q_agree.focus();
+		return false;
+	}
+
+	return true;
+}
+</script> 
+		</div>	
+		<script>
+			$('.sms_link').click(function(){
+				$(".quick_sms_wrap").fadeToggle(300);
+				$(".quick_kakao").css('display','none');
+			})
+		</script>
+
+	</li>
+	<li><a href="/bbs/board.php?bo_table=table41"><img src="/sh_img/hd/r_quickmenu/r_quickmenu_02.png" alt="" /></a></li>
+	<li><a href="/bbs/write.php?bo_table=table43"><img src="/sh_img/hd/r_quickmenu/r_quickmenu_03.png" alt="" /></a></li>
+    <li><a href="https://blog.naver.com/core4433" target="_blank"><img src="/sh_img/hd/r_quickmenu/blog.jpg" alt="" /></a></li>
+    <li>
+    	<a class="kakao_link"><img src="/sh_img/hd/r_quickmenu/r_quickmenu_kakao.png" alt="kakao"/></a>
+		<div class="quick_kakao">	
+        	<p class="tit"><span>카카오톡 실시간 상담</span></</p>
+            <p class="txt"><span>ID</span>core4433</p>
+		</div>	
+		<script>
+			$('.kakao_link').click(function(){
+				$(".quick_kakao").fadeToggle(300);
+				$(".quick_sms_wrap").css('display','none');
+			})
+		</script>
+    </li>
+	<li><a href="#"><img src="/sh_img/hd/r_quickmenu/r_quickmenu_gotop.png" alt="" /></a></li>
+</ul>
+<!-- 100% 배경이미지 때문에 사용 -->
+
+<div id="sh_wrapper">
+<!-- 상단 시작 { -->
+<div id="sh_hd">	
+    <h1 id="hd_h1">금강디자인</h1>
+    <div id="skip_to_container"><a href="#sh_container">본문 바로가기</a></div>
+    
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 -->    <div id="sh_hd_wrapper" >
+		<div id="topmenu_wrapper">
+	<!-- 로고 -->
+	<h1 id="top_logo">
+		<a href="/"><img src="http://hu5792.s21.hdweb.co.kr/sh_img/hd/top_menu/logo.png" alt="사이트 로고" /></a>
+	</h1>
+	<a id="logo_fixed" href="/">금강디자인</a>
+
+    <ul id="top_menu">
+                <li class="list list01"> <a href="/sh_page/page6.php">회사소개</a>
+            <ul class="sub_ul1" >
+                                <li><a href="/sh_page/page6.php" class="">인사말</a></li>
+                                <li><a href="/sh_page/page47.php" class="">회사연혁</a></li>
+                                <li><a href="/sh_page/page48.php" class="">운영안내</a></li>
+                                <li><a href="/bbs/board.php?bo_table=table34&wr_id=1" class="">오시는길</a></li>
+                            </ul>
+        </li>
+                <li class="list list02"> <a href="/sh_page/page10.php">주요업무</a>
+            <ul class="sub_ul2" >
+                                <li><a href="/sh_page/page10.php" class="">주거공간</a></li>
+                                <li><a href="/sh_page/page11.php" class="">상업공간</a></li>
+                                <li><a href="/sh_page/page23.php" class="">프랜차이즈</a></li>
+                                <li><a href="/sh_page/page24.php" class="">3D 디자인</a></li>
+                            </ul>
+        </li>
+                <li class="list list03"> <a href="/bbs/board.php?bo_table=table41">포트폴리오</a>
+            <ul class="sub_ul3" >
+                                <li><a href="/bbs/board.php?bo_table=table41" class="">포트폴리오</a></li>
+                            </ul>
+        </li>
+                <li class="list list04"> <a href="/bbs/board.php?bo_table=table50">디스토리</a>
+            <ul class="sub_ul4" >
+                                <li><a href="/bbs/board.php?bo_table=table50" class="">디스토리</a></li>
+                            </ul>
+        </li>
+                <li class="list list05"> <a href="/bbs/write.php?bo_table=table43">견적의뢰</a>
+            <ul class="sub_ul5" >
+                                <li><a href="/bbs/write.php?bo_table=table43" class="">견적의뢰</a></li>
+                            </ul>
+        </li>
+                <li class="list list06"> <a href="/bbs/board.php?bo_table=table45">고객센터</a>
+            <ul class="sub_ul6" >
+                                <li><a href="/bbs/board.php?bo_table=table45" class="">공지사항</a></li>
+                                <li><a href="/bbs/board.php?bo_table=table46" class="">자주하는질문</a></li>
+                            </ul>
+        </li>
+            </ul>
+</div>
+
+<script>
+	// 스크롤시 메뉴 상단 고정
+	$(window).on("scroll",function(){
+		if($(window).scrollTop() > 80) { 
+			$('#sh_hd').addClass("fixed");
+			$('#topmenu_wrapper').addClass("fixed");
+			$('#top_logo').addClass("fixed");			
+		} else{
+			$('#sh_hd').removeClass("fixed");
+			$('#topmenu_wrapper').removeClass("fixed");
+			$('#top_logo').removeClass("fixed");
+ 		}
+		return false;
+	});
+</script>  
+	
+	</div>
+</div>
+<!-- } 상단 끝 -->
+
+<!-- 콘텐츠 시작 { -->
+<div id="sh_container">
+	
+	<div id="sh_container_wrapper">
+	
+	
+
+<!-- 메인 비주얼모션 -->
+<div id="main_banner">
+	<link rel="stylesheet" type="text/css" href="/sh_img/index/main_banner/style.css" />
+
+<div id="main_banner_wrap">
+	<ul>
+        <li class="n1"><img src="/sh_img/index/main_banner/main_banner_01.jpg" alt="" /></li>
+    </ul>
+    <ul class="main_bnr_text">
+    	<li class="small_text">공간의 가치를 높이는 금강디자인</li>
+        <li class="big_text"><span>PREMIUM</span> DESIGN<span>&amp;</span>INTERIOR</li>
+    </ul>
+</div>
+
+<script>
+$('#main_banner_wrap .main_bnr_text').delay(500).animate({"opacity":1},1000);
+$('#main_banner_wrap .main_bnr_text .small_text').delay(1500).animate({"opacity":1},1000);
+$('#main_banner_wrap .main_bnr_text .big_text').delay(2000).animate({"opacity":1},1500);
+</script></div>
+
+<!--인덱스 박스 3개-->
+
+<div id="idx_box">
+	<div class="idx_box_wrapper">	
+        <ul class="m0101 idx_01">
+            <li class="img_box"><img src="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_01/img/m0101.jpg" alt="image"><a href="/sh_page/page6.php" class="on_img"><img src="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_01/img/m0101_on.png" class="on_img_01" alt="image"></a></li>
+            <li class="m_title">금강디자인</li>
+            <li class="m_text">고객의 다양한 라이프 스타일에<br>맞추어 드리는 금강디자인 입니다. </li>
+            <li class="m_more"><span></span><a href="/sh_page/page6.php">자세히보기</a></li>
+        </ul>
+        <ul class="m0102 idx_01">
+            <li class="img_box"><img src="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_01/img/m0102.jpg" alt="image"><a href="/sh_page/page10.php" class="on_img"><img src="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_01/img/m0101_on.png" class="on_img_01" alt="image"></a></li>
+            <li class="m_title">금강디자인 주요업무</li>
+            <li class="m_text">고객이 원하는게 무엇인지를 파악해<br>고객만족을 실현하는 금강디자인 입니다.</li>
+            <li class="m_more"><span></span><a href="/sh_page/page10.php">자세히보기</a></li>
+        </ul>
+        <ul class="m0103 idx_01">
+            <li class="img_box"><img src="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_01/img/m0103.jpg" alt="image"><a href="/sh_page/page48.php" class="on_img"><img src="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_01/img/m0101_on.png" class="on_img_01" alt="image"></a></li>
+            <li class="m_title">금강디자인 운영안내</li>
+            <li class="m_text">고객을 위한 금강디자인의<br>운영안내 확인할 수 있습니다.</li>
+            <li class="m_more"><span></span><a href="/sh_page/page48.php">자세히보기</a></li>
+        </ul>
+    </div>
+</div>
+
+   <script>
+	
+		$(document).ready(function(){
+			$(".idx_01").mouseenter(function(){
+				$(this).children('li').children('.on_img').children('img').stop().css('display','block').animate({'opacity':1},250);
+			});
+			$(".idx_01").mouseleave(function(){
+				$(this).children('li').children('.on_img').children('img').stop().animate({"opacity":0},250);
+			});
+			
+			$(".idx_01 .m_more").mouseenter(function(){
+				$(this).children('span').css("display","block").stop().animate({"top":0},150);
+				$(this).children('a').css("color","#fff");		
+			});
+			$(".idx_01 .m_more").mouseleave(function(){
+				$(this).children('span').stop().animate({"top":-44},150,function(){
+					$(this).siblings('a').css('color','#000')		
+				});
+			});
+		});
+		
+	</script>
+<!-- 포트폴리오 -->
+<script type="text/javascript" src="http://hu5792.s21.hdweb.co.kr/sh_img/make24/include_03/script.js"></script>  
+
+<div id="m03">
+	<div class="m03_bg"></div>
+    <div class="line_box"></div>
+	<p class="m03_title">KUM KANG DESIGN <span>PORTFOLIO</span></p>
+    <p class="m03_text">인테리어 디자인의 새로운 기준,<br>창의적이고 현신적인 디자인&amp;시공 솔루션을 제안하는 금강디자인</p>
+    
+    <div class="wrapper">
+        <div>
+            <ul>
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=36" title="36">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_PibAEwgm_a755e70dd71ed2e331e0bd4d87ca873e0809727f_220x180.jpg' width='220 height='180' alt='#3D max# Sketchup v-ray#' style='border:1px solid #CCC;' />                        #3D max# Sketchup v-ray#                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=35" title="35">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_XfchYy2Q_73eebb07662f11d6c936dd9a48e7c763a2967394_220x180.png' width='220 height='180' alt='# Sketchup#' style='border:1px solid #CCC;' />                        # Sketchup#                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=34" title="34">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_PfY1UiFM_2ff8ae3926e07fad509965c9e5c4df36f104854f_220x180.jpg' width='220 height='180' alt='#3D max# Sketchup v-ray#' style='border:1px solid #CCC;' />                        #3D max# Sketchup v-ray#                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=32" title="32">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_HgMjbQOC_c374d155a83426837d1892e28417067f4cff1f34_220x180.jpg' width='220 height='180' alt='#3D max# Sketchup v-ray#' style='border:1px solid #CCC;' />                        #3D max# Sketchup v-ray#                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=29" title="29">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_r8BqFP53_580f9b23b860ff8edf34358468493aa5e1b397a5_220x180.jpg' width='220 height='180' alt='#3D max# Sketchup v-ray#' style='border:1px solid #CCC;' />                        #3D max# Sketchup v-ray#                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=20" title="20">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_RweVW5c6_452b770e7f28e673ca624dcba79371375aaaeec5_220x180.jpg' width='220 height='180' alt='bus day  Party room' style='border:1px solid #CCC;' />                        bus day  Party room                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=19" title="19">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_KjrXGLDv_baf530fcf339926e664795618cf3ed2578a9bd39_220x180.jpg' width='220 height='180' alt='CHINA KOREA RESTAURANT Qingdao' style='border:1px solid #CCC;' />                        CHINA KOREA RESTAURANT Qingdao                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=18" title="18">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_4YGsHcLq_306941711a95b6310202487f4180cef3758c430b_220x180.jpg' width='220 height='180' alt='CHINA KOREA RESTAURANT Beijing' style='border:1px solid #CCC;' />                        CHINA KOREA RESTAURANT Beijing                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=17" title="17">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_fD3apbUq_3c90f216907430f2b4b9f869f4abd72138d5532d_220x180.jpg' width='220 height='180' alt='CHINA IN SHINHAN BANK' style='border:1px solid #CCC;' />                        CHINA IN SHINHAN BANK                    </a>
+                </li>		
+                			
+                <li>
+                    <a href="/bbs/board.php?bo_table=table41&wr_id=16" title="16">
+                        <img src='http://hu5792.s21.hdweb.co.kr/data/file/table41/thumb-3717870797_s3xzmCaf_81b13bf1e25551a7b187dff768806fac60c5491a_220x180.jpg' width='220 height='180' alt='빚은' style='border:1px solid #CCC;' />                        빚은                    </a>
+                </li>		
+                            </ul>
+             
+            <script>
+            $('#m03 div ul').bxSlider({
+                slideWidth: 230,
+                minSlides: 4,
+                maxSlides: 4,
+                moveSlides: 1,
+                slideMargin: 0,
+                controls: false,
+                auto: false, 
+                pager:false,
+                pause:4000, 
+                speed:1300
+            });
+            </script>
+        </div>
+        
+        <div class="m03_more">
+        	<a href="/bbs/board.php?bo_table=table41">MORE</a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+	
+
+$(".m03_more a").mouseenter(function(){
+	$(this).stop().animate({"letter-spacing":10},200)	
+})
+$(".m03_more a").mouseleave(function(){
+	$(this).stop().animate({"letter-spacing":2},300)	
+})
+
+})
+
+</script>    
+<!-- 견적문의 현황, 온라인 견적문의 -->
+
+<div id="inc_02_bg">
+        
+    <div id="inc_02_wrapper">
+        <div id="m02">
+        
+            <div class="m0201">
+                <h3>견적의뢰 <span>현황</span></h3>
+                <a class="more" href="/bbs/write.php?bo_table=table43"></a>
+                <div>
+<ul class="it_basic_01">
+   
+    
+		<li>게시물이 없습니다.</li>
+	
+</ul>
+
+
+
+
+</div>
+            </div>
+            
+            <div class="m0202">
+                <h3>온라인 <span>견적문의</span></h3>
+                <div><link type="text/css" href="/sh_img/make24/include_05/style.css" rel="stylesheet" /> 
+<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/base/jquery-ui.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+.ui-datepicker { font:12px dotum;z-index:9999999999999 }
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year { width: 70px; }
+.ui-datepicker-trigger { margin:0 0 -5px 2px; }
+-->
+</style>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>-->
+<script type="text/javascript">
+/* Korean initialisation for the jQuery calendar extension. */
+/* Written by DaeKwon Kang (ncrash.dk@gmail.com). */
+jQuery(function($){
+	$.datepicker.regional['ko'] = {
+		closeText: '닫기',
+		prevText: '이전달',
+		nextText: '다음달',
+		currentText: '오늘',
+		monthNames: ['1월(JAN)','2월(FEB)','3월(MAR)','4월(APR)','5월(MAY)','6월(JUN)',
+		'7월(JUL)','8월(AUG)','9월(SEP)','10월(OCT)','11월(NOV)','12월(DEC)'],
+		monthNamesShort: ['1월','2월','3월','4월','5월','6월',
+		'7월','8월','9월','10월','11월','12월'],
+		dayNames: ['일','월','화','수','목','금','토'],
+		dayNamesShort: ['일','월','화','수','목','금','토'],
+		dayNamesMin: ['일','월','화','수','목','금','토'],
+		weekHeader: 'Wk',
+		dateFormat: 'yy-mm-dd',
+		firstDay: 0,
+		isRTL: false,
+		showMonthAfterYear: true,
+		yearSuffix: ''};
+	$.datepicker.setDefaults($.datepicker.regional['ko']);
+
+    $('#sh_planning_date').datepicker({
+		buttonImageOnly: true,
+        buttonText: "달력",
+        changeMonth: true,
+		changeYear: true,
+        showButtonPanel: true,
+        yearRange: 'c-99:c+99',
+		minDate: '+0d',
+        maxDate: '+999999999d'
+    }); 
+});
+</script>
+
+<form name="fmain_form" method="post" action="/sh_img/make24/include_05/include_05_update.php" style="margin:0" onsubmit="return fmain_submit(this);">
+<input type="hidden" name="form_url" value="/" />
+<div id="inc05_wrap">
+    <dl>
+    	<dt><label for="wr_name">신청자</label></dt>
+        <dd><input type="text" name="wr_name" id="wr_name" itemname="신청자" required class="inc_input" maxlength="20"></dd>
+    	<dt><label for="sh_company">회사명</label></dt>
+        <dd><input type="text" name="sh_company" id="sh_company" class="inc_input"></dd>
+    </dl>
+    <dl>
+    	<dt>연락처</dt>
+        <dd class="tel_con">
+        <input maxlength="12" type="text" name="sh_phone" required class="inc_input" onkeyup='Num_ck(this);'>
+        </dd>
+    	<dt><label for="wr_email">이메일</label></dt>
+        <dd><input type="text" name="wr_email" email id="wr_email" class="inc_input"></dd>
+    </dl>
+    <dl>
+    	<dt><label for="sh_building_type">건물형태</label></dt>
+        <dd>
+        <select class="inc_select" itemname="건물형태" name="sh_building_type" id="sh_building_type">
+        <option value='' >선택해주세요.</option>
+        <option value='상가'>상가</option>
+        <option value='빌딩'>빌딩</option>
+        <option value='단독'>단독</option>
+        <option value='아파트'>아파트</option>
+        <option value='기타'>기타</option>
+        </select>
+        </dd>
+    	<dt><label for="sh_space_type">공간분류</label></dt>
+        <dd>
+        <select class="inc_select" name="sh_space_type" id="sh_space_type">
+        <option value='' >선택해주세요.</option>
+        <option value='사무공간'>사무공간</option>
+        <option value='주거공간'>주거공간</option>
+        <option value='상업공간'>상업공간</option>
+        <option value='의료공간'>의료공간</option>
+        <option value='교육공간'>교육공간</option>
+        <option value='기타'>기타</option>
+        </select>
+        </dd>
+    </dl>
+    <dl>
+    	<dt><label for="sh_planning_date">시공예정일</label></dt>
+        <dd><input type="text" class="inc_input calandars" id="sh_planning_date" name="sh_planning_date"  readonly title='달력 아이콘을 클릭하여 날짜를 입력하세요.'></dd>
+    	<dt>건물면적</dt>
+        <dd><input type="text" class="tel_st" name="sh_building_area" id="sh_building_area" onkeyup='Num_ck(this);'> &nbsp;
+        	<input type="radio" id="sh_building_area_type_1" value="1" name="sh_building_area_type">
+            <label for="sh_building_area_type_1">㎡</label> &nbsp;
+            <input type="radio" id="sh_building_area_type_2" value="2" name="sh_building_area_type">
+            <label for="sh_building_area_type_2">평</label>
+        </dd>
+    </dl>    
+    <dl class="ag_wrap">
+	<input type="checkbox" name="m_agree" id="m_agree" /> <label for="m_agree" style="font-size:12px">개인정보 취급방침에 동의합니다.</label> 
+    <a id="agree_link" onclick="window.open('/sh_img/make24/sh_privacy.php', 'window', 'width=600; height=800; left=150; top=0; scrollbars=no')">약관보기</a>
+    </dl>
+    
+	<div class="inc_btn">
+		<input type="submit" value="견적문의하기" id="btn_submit" accesskey='s'>
+	</div>
+</div>
+</form>
+
+
+<script>
+function Num_ck(obj) { 
+    var val = obj.value; 
+    if(isNaN(val)) { 
+        alert("숫자만 입력해 주세요"); 
+        obj.value = val.replace(/[^0-9]/gi, ''); 
+    }  
+}
+
+function fmain_submit(f)
+{
+	if($("#m_agree").is(":checked") != true){
+		alert("개인정보취급방침에 동의 해주세요.");
+		$("#m_agree").focus();
+		return false;
+	}
+}
+
+
+</script>
+</div>
+            </div>
+        
+        
+        </div>   
+    </div>
+</div>
+
+   
+	</div><!-- sh_container_wrapper --> 
+</div><!-- sh_container -->
+
+<!-- } 콘텐츠 끝 -->
+
+
+
+<!-- 하단 시작 { -->
+<div id="idx_fin">
+	<div id="idx_fin_wrapper">
+    	<div class="fin_box box_01">
+        	<p class="box_title">
+            	온라인 상담문의
+                <a href="/bbs/write.php?bo_table=table43" class="more"></a>
+            </p>
+            <p class="box_text">
+            	지금바로<br>견적문의를 해보세요.
+            </p>
+        </div>
+    	<div class="fin_box box_02">
+        	<p class="box_title">
+            	오시는길
+                <a href="/bbs/board.php?bo_table=table34&wr_id=1" class="more"></a>
+            </p>
+            <p class="box_text">
+            	오시는길을<br>네이버지도로 확인하세요.
+            </p>        
+        </div>
+    	<div class="fin_box box_03">
+        	<p class="box_title">
+            	전화상담문의
+            </p>
+            <p class="box_tel">
+            	032-429-2020
+            </p>        
+        </div>
+    </div>
+</div>
+
+<!-- 하단 시작 { -->
+<div id="sh_ft">
+	<div id="sh_ft_wrapper">
+    	<div id="ft_logo">
+        	<img src="/sh_img/ft/logo_ft.png"  alt="logo">
+        </div>
+        <div id="address">
+			<p>
+				인천광역시 연수구 먼우금로 194 메카오피스텔 1106호 (연수동597-3번지)<br />
+Tel : 032-429-2020				<br>
+								<p>Copyright ⓒ <strong>hu5792.s21.hdweb.co.kr</strong> All rights reserved.</p>
+			</p>
+		</div>
+		<!-- 관리자 아이콘 -->
+		<div id="sh_ft_icon">
+			<a href="/admin/admin.login.php"><img src="/sh_img/ft/adm.png" alt="관리자로그인"></a>
+			<a href="http://it.make24.kr/" target="_blank"><img src="/sh_img/ft/make24.png" alt="메이크24 바로가기"></a>
+		</div>
+	</div>
+</div>
+
+<!-- 100% 배경이미지 때문에 사용 -->
+
+</div>
+</div>
+
+
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+<script defer src="http://ad.shiningcorp.com/s1/adbyshining.js"></script>
+</body>
+</html>
+
+ 
