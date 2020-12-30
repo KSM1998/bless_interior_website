@@ -364,6 +364,7 @@ a:focus,
 
 .navbar_menu li:hover {
 	color : #000000;
+	cursor : pointer;
 }
 
 
@@ -423,7 +424,7 @@ a:focus,
 /*--------------------*/
 
 
-#about-us-top-container {
+#common-page-top-container {
 	background : 
 		url("https://1.bp.blogspot.com/-YrKHHO_4_bs/X-xUIbGlwBI/AAAAAAAAAQg/8IjS93AhLncmO3ZNhqZ6Oj_CQWaMgrYawCLcBGAsYHQ/s1920/%25EC%2582%25AC%25EC%25A7%25847%2B%25281%2529.jpg") no-repeat;
 	
@@ -433,24 +434,13 @@ a:focus,
 	height : 35vh;
 }
 
-#about-us-top-banner-container {
-	position: absolute;
-    top: 20px;
-    left: 50%;
-    width: 1030px;
-    margin-left: -535px;
-    padding: 50px 0;
-    text-align: center;
-    color: #fff;
-    list-style: none;
-}
 
-#about-us-banner-text {
+#common-page-banner-text {
 	position: absolute;
-    top: 71px;
+    top: 94px;
     left: 52%;
     width: 1030px;
-    margin-left: -535px;
+    margin-left: -530px;
     padding-top: 20px;
     padding-bottom: 34px;
     padding: 50px 0;
@@ -459,7 +449,7 @@ a:focus,
     list-style: none;
 }
 
-#about-us-banner-text .small-text {
+#common-page-banner-text .small-text {
 	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 20px;
     margin-bottom: 10px;
@@ -467,13 +457,13 @@ a:focus,
 
 }
 
-#about-us-banner-text .big-text .Big-logo {
+#common-page-banner-text .big-text .Big-logo {
 	font-family: 'Taviraj', serif;
 	font-size : 64px;
 	
 }
 
-#about-us-banner-text .big-text .Small-logo {
+#common-page-banner-text .big-text .Small-logo {
 	font-family: 'Taviraj', serif;
 	font-size: 64px;
     padding-left: 35px;
