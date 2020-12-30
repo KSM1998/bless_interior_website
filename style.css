@@ -431,13 +431,15 @@ a:focus,
 
 .mu-title h2 {
 	color: #323232;
-	font-size: 30px;
+	font-size: 42px;
+	font-family: 'Gothic A1', sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
 
 .mu-title p {
-
+	font-size : 20px;
+	font-family: 'Gothic A1', sans-serif;
 }
 
 .mu-about-left {
@@ -757,6 +759,15 @@ a:focus,
 	float: left;
 	margin-top: 20px;
 	width: 100%;
+}
+
+.row-gallery {
+	display : grid;
+	grid-template-columns : auto;
+	width : 100%;
+	height : auto;
+	margin : auto;
+	padding : auto;
 }
 
 .mu-portfolio-filter-area{
