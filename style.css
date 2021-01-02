@@ -547,7 +547,7 @@ a:focus,
 
 
 /*--------------------*/
-/* PORTFOLIO */
+/* 포트폴리오 */
 /*--------------------*/
 
 #portfolio {
@@ -667,9 +667,28 @@ a:focus,
 
 }
 
+/*--------------------*/
+/* 커뮤니티 */
+/*--------------------*/
 
+#commuity-notice {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
 
+.notice-container {
+	margin-top: 25px;
+    float: left;
+    width: 45%;
+    margin-left: 470px;
+    margin-bottom: 50px;
+}
 
+.notice-hd {
+	margin-bottom: 35px;
+}
 
 /* Filter controls */
 

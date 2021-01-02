@@ -19,6 +19,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Gothic+A1:wght@500&family=Gugi&family=Noto+Sans+KR:wght@500&family=Sunflower:wght@300&family=Taviraj&display=swap" rel="stylesheet">
 	  
      <!-- Bootstrap CSS -->
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- Slick slider -->
     <link href="assets/css/slick.css" rel="stylesheet">
@@ -78,7 +79,7 @@
 					<nav aria-label="breadcrumb" role="navigation">
 					  <ol class="breadcrumb mu-breadcrumb">
 					    <li class="breadcrumb-item"><a href="#">Home</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">404 page</li>
+					    <li class="breadcrumb-item active" aria-current="page">공지사항</li>
 					  </ol>
 					</nav>
 				</div>
@@ -90,37 +91,55 @@
 	
 	<!-- Start main content -->
 	<main>
-		<!-- Start 404 Error -->
-		<section id="mu-error">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-error-area">
-							<!-- Title -->
-							<div class="row">
-								<div class="col-md-12">
-									<div class="mu-title">
-										<h2>Oops! This page could not be found!</h2>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
-									</div>
-								</div>
-							</div>
-								<!-- Start Contact Content -->
-							<div class="mu-error-content">
-								<div class="mu-error-text">
-									<div class="mu-backdrop">
-									    <p class="mu-text">404</p>
-									    <div class="mu-overlay"></div>
-									</div>
-								</div>	
-							</div>
-							<!-- End 404 Error  Content -->
-						</div>
+		
+		<section id="community-notice">
+			<div class="notice-container">
+				
+				<div class ="notice-hd">
+					<h2>
+						공지사항
+					</h2>
+				</div>
+				
+				<table class="table">
+				  <thead>
+					<tr>
+					  <th scope="col">번호</th>
+					  <th scope="col">제목</th>
+					  <th scope="col">작성자</th>
+					  <th scope="col">날짜</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">1</th>
+					  <td>Mark</td>
+					  <td>Otto</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+					  <th scope="row">2</th>
+					  <td>Jacob</td>
+					  <td>Thornton</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <th scope="row">3</th>
+					  <td colspan="2">Larry the Bird</td>
+					  <td>@twitter</td>
+					</tr>
+				  </tbody>
+				</table>
+				
+				<div class="search-bar">
+					<div class="input-group mb-3">
+					  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="검색어를 입력해주세요" aria-describedby="button-addon2">
+					  <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- End 404 Error  -->
+	
 
 	</main>
 	
