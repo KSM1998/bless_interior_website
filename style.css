@@ -681,13 +681,26 @@ a:focus,
 .notice-container {
 	margin-top: 25px;
     float: left;
-    width: 45%;
+    width: 50%;
     margin-left: 470px;
     margin-bottom: 50px;
 }
 
 .notice-hd {
 	margin-bottom: 35px;
+}
+
+.search-bar{
+	width: 45%;
+    float: left;
+	margin-top:30px;
+    margin-left: 280px;
+}
+
+.table td, .table th {
+    vertical-align: top;
+    border-top: 1px solid #e9ecef;
+    padding: 25px 0;
 }
 
 /* Filter controls */
