@@ -23,7 +23,9 @@
 
  <!-- Gallery Lightbox -->
 <link href="assets/css/magnific-popup.css" rel="stylesheet"> 
-
+	
+<link rel = "stylesheet" type="text/css" href="/assets/css/lightbox.min.css">
+	
 <!-- Skills Circle CSS  -->
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
 
@@ -54,7 +56,7 @@
 						<li> <a href= "about-us.html">블레스 인테리어</a></li>
 						<li> <a href= "portfolio.html">포트폴리오</a></li>
 						<li> <a href= "contact.html">견적 문의</a></li>
-						<li> <a href= "404.html">커뮤니티</a></li>
+						<li> <a href= "comunity.html">커뮤니티</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -94,19 +96,19 @@
 						<li data-filter="6">상업 공간</li>
 					</ul>
 				</div>
-			
+
 					<div class ="gallery-section">
 						<div class ="gallery">
-								<div class="each-gallery">
-									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
-									<img src ="assets/images/portfolio/img-1.jpg" alt="">
+								<div class="each-gallery" data-category="6">
+									<a href="assets/images/portfolio/img-1.jpg" data-lightbox="mygallery" title="PAINTING">
+									<img src ="assets/images/portfolio/img-1.jpg"  alt="">
 										<div class="filter-item-content">
 											<h4 class="filter-item-title">교회 인테리어</h4>
 										</div>
 									</a>
 								</div>
 						
-								<div class="each-gallery">
+								<div class="each-gallery" data-category="6">
 									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
 									<img src ="assets/images/portfolio/img-2.jpg" alt="">
 										<div class="filter-item-content">
@@ -115,65 +117,65 @@
 									</a>
 								</div>
 						
-								<div class="each-gallery">
+								<div class="each-gallery" data-category="1">
 									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
 									<img src ="assets/images/portfolio/img-3.jpg" alt="">
 										<div class="filter-item-content">
-											<h4 class="filter-item-title">아파트 인테리어</h4>
+											<h4 class="filter-item-title">아파트 화장실</h4>
 										</div>
 									</a>
 								</div>
 						
-								<div class="each-gallery">
+								<div class="each-gallery" data-category="1">
 									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
 									<img src ="assets/images/portfolio/img-4.jpg" alt="">
 										<div class="filter-item-content">
-											<h4 class="filter-item-title">아파트 인테리어</h4>
+											<h4 class="filter-item-title">아파트 화장실</h4>
 										</div>
 									</a>
 								</div>
 						
-								<div class="each-gallery">
+								<div class="each-gallery" data-category="1">
 									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
 									<img src ="assets/images/portfolio/img-5.jpg" alt="">
 										<div class="filter-item-content">
-											<h4 class="filter-item-title">주택 인테리어</h4>
+											<h4 class="filter-item-title">주택 화장실</h4>
 										</div>
 									</a>
 								</div>
 						
-								<div class="each-gallery">
+								<div class="each-gallery" data-category="1">
 									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
 									<img src ="assets/images/portfolio/img-6.jpg" alt="">
 										<div class="filter-item-content">
-											<h4 class="filter-item-title">교회 인테리어</h4>
+											<h4 class="filter-item-title">아파트 화장실</h4>
 										</div>
 									</a>
 								</div>
 						
-								<div class="each-gallery">
+								<div class="each-gallery" data-category="1">
 									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
 									<img src ="assets/images/portfolio/img-7.jpg" alt="">
 										<div class="filter-item-content">
-											<h4 class="filter-item-title">교회 인테리어</h4>
+											<h4 class="filter-item-title">빌라 화장실</h4>
 										</div>
 									</a>
 								</div>
 						
-								<div class="each-gallery">
+								<div class="each-gallery" data-category="1">
 									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
 									<img src ="assets/images/portfolio/img-8.jpg" alt="">
 										<div class="filter-item-content">
-											<h4 class="filter-item-title">교회 인테리어</h4>
+											<h4 class="filter-item-title">아파트 화장실</h4>
 										</div>
 									</a>
 								</div>
 						
-								<div class="each-gallery">
+								<div class="each-gallery" data-category="1">
 									<a class = "p-image" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
 									<img src ="assets/images/portfolio/img-9.jpg" alt="">
 										<div class="filter-item-content">
-											<h4 class="filter-item-title">교회 인테리어</h4>
+											<h4 class="filter-item-title">아파트 화장실</h4>
 										</div>
 									</a>
 								</div>
@@ -203,7 +205,7 @@
 				
 				<div class="col-md-3">
 					<div class="mu-single-footer">
-						<h3>Contact Information</h3>
+						<h2 id="footer-header-text">Contact Information</h2>
 						<ul class="list-unstyled">
 						  <li class="media">
 							<span class="fa fa-home"></span>
@@ -269,6 +271,9 @@
 <script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>
 <!-- Gallery Lightbox -->
 <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+
+<script type="text/javascript" src="assets/js/lightbox-plus-jquery.min.js"></script>	
+
 <!-- Counter js -->
 <script type="text/javascript" src="assets/js/counter.js"></script>
 <!-- Ajax contact form  -->

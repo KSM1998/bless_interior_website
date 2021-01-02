@@ -489,11 +489,12 @@ a:focus,
 
 .mu-title {
 	display: inline;
-	float: left;
-	text-align: center;
-	width: 100%;
-	margin-bottom: 35px;
-	padding: 0 25%;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 0 25%;
+    padding-top: 40px;
 }
 
 .mu-title h2 {
@@ -558,7 +559,7 @@ a:focus,
 .portfolio-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 45px 0;
 	width: 100%;
 }
 
@@ -573,7 +574,7 @@ a:focus,
 	display: inline;
 	float: left;
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .filtr-item {
@@ -636,9 +637,8 @@ a:focus,
 }
 
 .gallery-section {
-	width:100&;
-	background : #f1f1f1;
-	margin-top: 200px;
+	width:100%;
+	margin-top: 180px;
 }
 
 
@@ -651,19 +651,20 @@ a:focus,
 .gallery-section .gallery {
 
 	width: 100%;
-    padding: 40px 270px;
+    padding: 7px 400px;
     display: grid;
     grid-template-columns: 33.333% 33.333% 33.333%;
 }
 
 .gallery-section .each-gallery {
 	position: relative;
-	margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
 }
 
 .each-gallery .p-image {
-	position: static;
+
 }
 
 
@@ -750,9 +751,9 @@ a:focus,
 
 #mu-google-map {
 	display: inline;
-	float: left;
-	width: 100%;
-	margin-bottom: -7px;
+    float: left;
+    width: 47%;
+    margin-left: 480px;
 }
 
 #mu-google-map iframe {
@@ -773,32 +774,44 @@ a:focus,
 }
 
 #footer-header-text {
-	color : #000000;
-	font-family: 'Do Hyeon', sans-serif;
-	font-size : 30px;
-	margin-bottom : 30px
+	color: #000000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 9px;
+    text-align: center;
 }
 
 #footer-header-blog-text {
-	color : #000000;
-	font-family: 'Do Hyeon', sans-serif;
-	font-size : 30px;
-	margin-left : 55px;
-	margin-bottom : 30px
+	color: #000000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
 }
 
 #naver-blog-icon-img {
-	width : 45px;
-	margin-left : 100px;
+	width: 35px;
+    margin-left: 130px;
 }
 
 #footer-under-text {
-	color : #000000;
-	font-family: 'Do Hyeon', sans-serif;
-	font-size : 23px;
+	color: #000000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 19px;
+    text-align: center;
 }
 
 .mu-footer-top {
+	    background: url(https://1.bp.blogspot.com/-j7x8Cei2-aU/X-xTHigt1HI/AAAAAAAAAPw/8tRA1MMCBdwYME8z7U-gGY-bM-DhckvxwCLcBGAsYHQ/s2048/%25EC%2582%25AC%25EC%25A7%258411.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline;
+    float: left;
+    padding: 20px 0;
+    width: 100%;
+	
+	
 	background-color: #FFFAFA;
 	display: inline;
 	float: left;
@@ -857,9 +870,9 @@ a:focus,
 }
 
 .mu-single-footer .list-unstyled li {
-	float : left;
-	list-style : none;
-	margin-left : 20px;
+    float: left;
+    list-style: none;
+    margin-left: 37px;
 }
 
 .mu-single-footer .list-unstyled li.media span {
@@ -868,11 +881,12 @@ a:focus,
 
 .mu-single-footer .list-unstyled li.media p {
 	line-height: 1.5;
-	margin-top: -5px;
-	margin-bottom: 4px;
-	font-family: 'Do Hyeon', sans-serif;
-	font-size: 17px;
-	color : #000000;
+    margin-top: -5px;
+    margin-bottom: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
 }
 
 .mu-single-footer .list-unstyled li.media a {
@@ -1292,7 +1306,6 @@ a:focus,
 	display: inline;
 	float: left;
 	text-align: center;
-	padding: 100px 0;
 	width: 100%;
 }
 
