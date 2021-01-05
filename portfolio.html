@@ -99,46 +99,47 @@
 		<header id="p-header">
 			<h2 class="p-logo">Portfolio</h2>
 				<ul>
-					<li class ="p-active">all</li>
-					<li>women</li>
-					<li>men</li>
-					<li>laptop</li>
+					<li class ="p-active">전체</li>
+					<li>화장실</li>
+					<li>싱크대</li>
+					<li>샷시</li>
+					<li>올수리</li>
 				</ul>
 		</header>
 		<section class ="p-section">
-			<div class="thumb" data-id="women">
+			<div class="thumb" data-id="전체">
 				<img src="assets/images/portfolio/img-1.jpg"  alt="">
 				<h4>교회 인테리어</h4>
 			</div>
-			<div class="thumb" data-id="women">
+			<div class="thumb" data-id="화장실">
 				<img src="assets/images/portfolio/img-2.jpg"  alt="">
 				<h4>상가 화장실</h4>
 			</div>
-			<div class="thumb" data-id="women">
+			<div class="thumb" data-id="화장실">
 				<img src="assets/images/portfolio/img-3.jpg"  alt="">
 				<h4>아파트 화장실</h4>
 			</div>
-			<div class="thumb" data-id="men">
+			<div class="thumb" data-id="화장실">
 				<img src="assets/images/portfolio/img-4.jpg"  alt="">
 				<h4>아파트 화장실</h4>
 			</div>
-			<div class="thumb" data-id="men">
+			<div class="thumb" data-id="화장실">
 				<img src="assets/images/portfolio/img-5.jpg"  alt="">
 				<h4>주택 화장실</h4>
 			</div>
-			<div class="thumb" data-id="men">
+			<div class="thumb" data-id="화장실">
 				<img src="assets/images/portfolio/img-6.jpg"  alt="">
 				<h4>아파트 화장실</h4>
 			</div>
-			<div class="thumb" data-id="laptop">
+			<div class="thumb" data-id="화장실">
 				<img src="assets/images/portfolio/img-7.jpg"  alt="">
 				<h4>빌라 화장실</h4>
 			</div>
-			<div class="thumb" data-id="laptop">
+			<div class="thumb" data-id="화장실">
 				<img src="assets/images/portfolio/img-8.jpg"  alt="">
 				<h4>아파트 화장실</h4>
 			</div>
-			<div class="thumb" data-id="laptop">
+			<div class="thumb" data-id="화장실">
 				<img src="assets/images/portfolio/img-9.jpg"  alt="">
 				<h4>아파트 화장실</h4>
 			</div>
@@ -175,10 +176,10 @@
 					item.className ="active";
 					
 					//show images
-					let values = item.textContext;
+					let values = item.textContent;
 					section.forEach(show => {
-						
-						if(show.getAttribute("data-id") === values || values ==="all") {
+							show.style.display = "none";
+						if(show.getAttribute("data-id") === values || values === "전체") {
 							show.style.display = "block";
 						}
 					});
@@ -274,6 +275,8 @@
     <script type="text/javascript" src="assets/js/jquery.filterizr.min.js"></script>
     <!-- Gallery Lightbox -->
     <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+	  
+	  
     <!-- Counter js -->
     <script type="text/javascript" src="assets/js/counter.js"></script>
     <!-- Ajax contact form  -->
