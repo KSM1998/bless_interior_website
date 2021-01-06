@@ -945,8 +945,9 @@ a:focus,
 }
 
 #naver-blog-icon-img {
-	width: 35px;
-    margin-left: 130px;
+	width: 40px;
+    margin-top: 15px;
+    margin-left: 3px;
 }
 
 #footer-under-text {
@@ -957,16 +958,12 @@ a:focus,
 }
 
 .mu-footer-top {
-	    background: url(https://1.bp.blogspot.com/-j7x8Cei2-aU/X-xTHigt1HI/AAAAAAAAAPw/8tRA1MMCBdwYME8z7U-gGY-bM-DhckvxwCLcBGAsYHQ/s2048/%25EC%2582%25AC%25EC%25A7%258411.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+	
+	background-color: #3c3d41;
     display: inline;
     float: left;
     padding: 20px 0;
     width: 100%;
-	
-	
-	background-color: #FFFAFA;
 	display: inline;
 	float: left;
 	padding: 20px 0;
@@ -1049,21 +1046,21 @@ a:focus,
 
 .fa-home:before {
     content: "\f015";
-    color: black;
+    color: white;
 }
 
 .fa-phone:before {
     content: "\f095";
-    color: black;
+    color: white;
 }
 
 .fa-envelope:before {
     content: "\f0e0";
-    color: black;
+    color: white;
 }
 
 .mu-footer-bottom {
-	background-color: #8B0000;
+	background-color: #111;
 	display: inline;
 	padding: 20px 0;
 	float: left;
@@ -1134,6 +1131,57 @@ a:focus,
 	font-weight: 600;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
+}
+
+footer{
+	float: left;
+    bottom: 0px;
+    width: 100%;
+    background: #3c3d41;
+    color: #d9d9d9;
+}
+
+.f-main-content{
+	display: flex;
+    margin-left: 360px;
+    margin-right: 150px;
+}
+
+.f-main-content .box{
+	padding: 10px 20px;
+    margin-left: 90px;
+}
+
+.box h2{
+	font-size: 1.125rem;
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+.box .f-content{
+	margin : 20px 0 0 0;
+}
+
+.box .f-content p{
+	text-align:justify;
+}
+
+.left .f-content. .social{
+	margin: 20px 0 0 0;
+}
+
+.left .f-content. .social a{
+	padding: 0 2px;
+}
+
+.left .f-content. .social a span{
+	height: 40px;
+	width: 40px;
+	background: #1a1a1a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius:5px;
 }
 
 
