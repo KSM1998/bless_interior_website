@@ -345,6 +345,10 @@ a:focus,
 	padding-bottom: 10px;
 }
 
+#white-title {
+	color : white;
+}
+
 #red-title {
 	color : #8B0000;
 }
@@ -500,14 +504,14 @@ a:focus,
 .mu-title h2 {
 	color: #323232;
 	font-size: 42px;
-	font-family: 'Gothic A1', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
 
 .mu-title p {
 	font-size : 20px;
-	font-family: 'Gothic A1', sans-serif;
+	font-family: '고딕';
 }
 
 .mu-about-left {
@@ -611,8 +615,8 @@ a:focus,
 }
 
 .filter-item-content h4 {
-	font-family: 'Noto Sans KR', sans-serif;
-	font-size : 30px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size : 37px;
 }
 
 .each-gallery:hover .filter-item-content {
@@ -674,7 +678,8 @@ a:focus,
 /*--------------------*/
 
 #p-main {
-	min-height : 100vh;
+	display: block;
+    margin-top: 45px;
 }
 
 #p-header {
@@ -689,11 +694,12 @@ a:focus,
 	font-weight:900px;
 	line-height:80px;
 	float:left;
-	margin-left: 50px;
+	margin-left: 220px;
 }
 
 #p-main #p-header ul {
 	float:right;
+	margin-right: 150px;
 }
 
 #p-main #p-header ul  li{
@@ -703,12 +709,16 @@ a:focus,
 	font-weight:900;
 	padding : 0 20px;
 	line-height: 80px;
-	margin-right:30px;
+	margin-right: 45px;
 }
 
 #p-main #p-header ul li:hover,
 .p-active {
 	background : chocolate;
+}
+
+#p-main #p-header ul li:action {
+	background-color : chocolate;
 }
 
 .p-ul{
@@ -732,7 +742,7 @@ a:focus,
 
 .p-section {
 	width: 100%;
-    padding: 30px 180px;
+    padding: 30px 205px;
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -760,10 +770,11 @@ a:focus,
 }
 
 .thumb h4{
-	font-size:1.5rem;
-	font-weight:900;
-	letter-spacing:3px;
-	line-height:80px;
+    font-size: 20px;
+    font-weight: 850;
+    letter-spacing: 1px;
+    line-height: 65px;
+	color:#000000;
 }
 
 .thumb:hover {
@@ -821,24 +832,25 @@ a:focus,
 
 .simplefilter li {
 	color: #323232;
-	cursor: pointer;
-	display: inline-block;
-	margin: 0 6px;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-	font-size: 16px;
-	font-weight: 700;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 18px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 22px;
+    font-weight: 700;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .simplefilter li span {
 	margin-left: 16px;
 }
 
-.simplefilter li.active {
-    color: #000000;
+.simplefilter li:hover {
+    background-color: #800000;
+	color:white;
 }
 
 
@@ -1176,10 +1188,26 @@ a:focus,
 	width: 100%;
 }
 
+#p-mu-breadcrumb {
+	background-color: #f6f6f6;
+	display: inline;
+	float: left;
+	width: 100%;
+	height: 45px;
+}
+
 .mu-breadcrumb {
 	background-color: transparent;
 	margin-bottom: 0;
 	padding-left: 0;
+}
+
+.p-mu-breadcrumb {
+	background-color: transparent;
+	margin-bottom: 0;
+	padding-left: 0;
+	margin-top: 10px;
+    margin-left: 20px;
 }
 
 .mu-breadcrumb li {
