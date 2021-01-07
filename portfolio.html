@@ -99,7 +99,7 @@
 		<header id="p-header">
 			<h2 class="p-logo">포트폴리오</h2>
 				<ul>
-					<li class ="p-active">전체</li>
+					<a href ="portfolio.html"><li class ="p-active">전체</li></a>
 					<li>화장실</li>
 					<li>싱크대</li>
 					<li>샷시</li>
@@ -107,7 +107,14 @@
 				</ul>
 		</header>
 		<section class ="p-section">
-			<div class="thumb" data-id="전체">
+			
+			<div class="thumb" data-id="올수리">
+				<a href ="https://blog.naver.com/onetop032/222199048056" target ="_blank">
+				<img src="assets/images/portfolio/img-10.jpg"  alt="">
+				<h4>간석동 신세계아파트 올수리</h4>
+				</a>
+			</div>
+			<div class="thumb" data-id="올수리">
 				<a href ="https://blog.naver.com/onetop032/222182433702" target ="_blank">
 				<img src="assets/images/portfolio/img-1.jpg"  alt="">
 				<h4>부평 은혜교회 인테리어</h4>
@@ -161,32 +168,22 @@
 				<h4>갈산동 백조아파트 화장실</h4>
 				</a>	
 			</div>
+			
+		<div class="pagination">
+			<div class="prev">Prev</div>
+			<div class="page">Page <span class="page-num"></span></div>
+			<div class="next">Next</div>
+		</div>	
+			
 		</section>
 		
-		<div class="p-pagination">
-			<nav aria-label="Page navigation example">
-			  <ul class="pagination">
-				<li class="page-item">
-				 <a class="page-link" href="portfolio.html" aria-label="Previous">
-				<span aria-hidden="true">&laquo;</span>
-			 	 </a>
-					</li>
-						<li class="page-item"><a class="page-link" href="portfolio.html">1</a></li>
-						<li class="page-item">
-			  			<a class="page-link" href="portfolio.html" aria-label="Next">
-							<span aria-hidden="true">&raquo;</span>
-			 			</a>
-					</li>
-			  </ul>
-			</nav>
-		</div>
 		
 		
-		<script>
+		
+		<script>		
 			const buttons = document.querySelectorAll("li");
 			const section = document.querySelectorAll(".thumb");
 			buttons.forEach(item => {
-				
 				item.addEventListener('click', ()=>{
 					buttons.forEach(item => {
 						item.clssName ="";
@@ -197,7 +194,7 @@
 					let values = item.textContent;
 					section.forEach(show => {
 							show.style.display = "none";
-						if(show.getAttribute("data-id") === values || values === "전체") {
+						if(show.getAttribute("data-id") === values) {
 							show.style.display = "block";
 						}
 					});
@@ -248,7 +245,7 @@
 			<h2>BLOG</h2>
 			<div class="social">
 				<a href = https://blog.naver.com/onetop032 target ="_blank"> 
-					<img id = "naver-blog-icon-img" src = https://1.bp.blogspot.com/-fj1jb6__83I/X_XRwf1f07I/AAAAAAAAARE/mGrSuioPig4U_vLDheBsZ5BYoGllGeeaQCLcBGAsYHQ/s135/%25EB%2584%25A4%25EC%259D%25B4%25EB%25B2%2584%2B%25EB%25B8%2594%25EB%25A1%259C%25EA%25B7%25B8%2B%25EC%2595%2584%25EC%259D%25B4%25EC%25BD%2598%2B%25ED%259D%2591%25EB%25B0%25B1.JPG alt = "블레스 인테리어 네이버 블로그 링크 아이콘">
+					<img id = "naver-blog-icon-img" src = https://1.bp.blogspot.com/-u_cqaA70Ebw/X_bnUusKEII/AAAAAAAAARY/WeOrxN4oqHIIXVgOmVeYcMIpfGVeglfvgCLcBGAsYHQ/s118/%25EB%2584%25A4%25EC%259D%25B4%25EB%25B2%2584%2B%25EB%25B8%2594%25EB%25A1%259C%25EA%25B7%25B8%2B%25EC%2595%2584%25EC%259D%25B4%25EC%25BD%2598%2B%25ED%259D%2591%25EB%25B0%25B1%2B%25EB%25B2%2584%25EC%25A0%25842.JPG alt = "블레스 인테리어 네이버 블로그 링크 아이콘">
 				</a>
 			</div>
 		</div>
@@ -282,7 +279,8 @@
     <!-- Gallery Lightbox -->
     <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
 	  
-	  
+	<!-- pagination-->
+	 <script type="text/javascript" src="assets/js/pagination_script.js"></script>
     <!-- Counter js -->
     <script type="text/javascript" src="assets/js/counter.js"></script>
     <!-- Ajax contact form  -->

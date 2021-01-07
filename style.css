@@ -487,8 +487,9 @@ a:focus,
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 10px 0;
 	width: 100%;
+	margin-bottom: 40px;
 }
 
 .mu-title {
@@ -504,7 +505,7 @@ a:focus,
 .mu-title h2 {
 	color: #323232;
 	font-size: 42px;
-	font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
@@ -539,17 +540,35 @@ a:focus,
 .mu-about-right ul li h3 {
 	border-bottom: 3px solid #e5e5e5;
 	color: #323232;
-	font-size: 20px;
+	font-size: 35px;
 	display: inline-block;
 	padding-bottom: 5px;
 	margin-bottom: 15px;
+	font-family: 'Sunflower', sans-serif;
 }
 
 .mu-about-right p {
-	font-size: 14px;
+	font-size: 20px;
+    font-family: '고딕', sans-serif;
+    margin-top: 38px;
+	width:535px;
 }
 
+.bottom-row{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 40px;
+}
 
+#introduce {
+	font-size : 20px;
+	font-family: 'Noto Sans KR', sans-serif;
+	width:570px;
+}
 /*--------------------*/
 /* 메인 홈페이지 포트폴리오 */
 /*--------------------*/
@@ -680,6 +699,7 @@ a:focus,
 #p-main {
 	display: block;
     margin-top: 45px;
+	min-height:600px;
 }
 
 #p-header {
@@ -695,6 +715,7 @@ a:focus,
 	line-height:80px;
 	float:left;
 	margin-left: 220px;
+	font-family: 'Sunflower', sans-serif;
 }
 
 #p-main #p-header ul {
@@ -710,11 +731,13 @@ a:focus,
 	padding : 0 20px;
 	line-height: 80px;
 	margin-right: 45px;
+	color:#444444;
 }
 
 #p-main #p-header ul li:hover,
 .p-active {
-	background : chocolate;
+	background : #4682B4;
+	color:white;
 }
 
 #p-main #p-header ul li:action {
@@ -782,11 +805,78 @@ a:focus,
 	
 }
 
-.p-pagination {
-	margin-left:900px;
-	margin-bottom:90px;
-	margin-top:30px
+#p-main .p-section .thumb.hide{
+	display: none;
 }
+#p-main .p-section .thumb.show{
+	display: block;
+	animation: show .5s ease;
+}
+@keyframes show{
+    0%{
+    	opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+    	opacity:1;
+    	transform: scale(1);
+    }
+}
+
+.p-section .pagination{
+	width: 100%;
+	float: left;
+	padding:15px;
+	text-align: center;
+	margin-left: 550px;
+	font-weight: bold;
+}
+.p-section .pagination div{
+	display: inline-block;
+	margin:0 10px;
+}
+.p-section .pagination .page{
+	color: gray;
+    text-align: center;
+    width: 15%;
+    padding-top: 7px;
+	font-size: 15px;
+}
+.p-section .pagination .prev,
+.p-section .pagination .next{
+ color:#000;
+ border:2px solid #000;
+ font-size:15px;
+ padding:7px 15px;
+ cursor: pointer;
+}
+
+.p-section .pagination .prev.disabled,
+.p-section .pagination .next.disabled{
+	border-color: gray;
+	color:gray;
+	pointer-events: none;
+}
+
+
+/*--------------------*/
+/* 견적문의 */
+/*--------------------*/
+
+#bless-interior-icon-img {
+	width: 35px;
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+
+#next-icon-title {
+	color: #323232;
+	font-size: 42px;
+    font-family: 'Sunflower', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
 
 /*--------------------*/
 /* 커뮤니티 */
@@ -800,11 +890,12 @@ a:focus,
 }
 
 .notice-container {
-	margin-top: 25px;
+	margin-top: 80px;
     float: left;
     width: 50%;
     margin-left: 470px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
+    min-height: 300px;
 }
 
 .notice-hd {
@@ -823,6 +914,8 @@ a:focus,
     border-top: 1px solid #e9ecef;
     padding: 25px 0;
 }
+
+
 
 /* Filter controls */
 
@@ -904,10 +997,11 @@ a:focus,
 /*--------------------*/
 
 #mu-google-map {
-	display: inline;
+	display: block;
     float: left;
-    width: 47%;
-    margin-left: 480px;
+    width: 43%;
+    margin-left: 550px;
+    margin-bottom: 100px;
 }
 
 #mu-google-map iframe {
@@ -945,9 +1039,8 @@ a:focus,
 }
 
 #naver-blog-icon-img {
-	width: 40px;
-    margin-top: 15px;
-    margin-left: 3px;
+	width: 50px;
+    margin-top: 5px;
 }
 
 #footer-under-text {
@@ -1268,6 +1361,14 @@ footer{
 
 .mu-breadcrumb li a {
 	color: #323232;
+}
+
+.breadcrumb li a {
+	color: #323232;
+}
+
+.breadcrumb-item.active {
+    color: #0091ea;
 }
 
 #mu-skills {
