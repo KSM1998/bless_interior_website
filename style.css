@@ -522,19 +522,14 @@ iframe {
 /*--------------------*/
 
 #mu-about {
-	
-	background-color: #fff;
-	display: inline;
-	float: left;
-	width: 100%;
 }
 
 .mu-about-area {
-	display: inline;
-	float: left;
-	padding: 10px 0;
 	width: 100%;
-	margin-bottom: 40px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .mu-title {
@@ -542,9 +537,8 @@ iframe {
     float: left;
     text-align: center;
     width: 100%;
-    margin-bottom: 35px;
-    padding: 0 25%;
-    padding-top: 40px;
+	margin-bottom: 55px;
+    margin-top: 20px;
 }
 
 .mu-title h2 {
@@ -561,17 +555,17 @@ iframe {
 }
 
 .mu-about-left {
-	display: inline;
-	float: left;
-	padding-right: 15px;
-	width: 100%;
+	display: block;
+    margin-right: 15px;
+    height: 350px;
+    width: 40%;
 }
 
 .mu-about-right {
-	display: inline;
-	float: left;
-	padding-left: 15px;
-	width: 100%
+	margin-left: 15px;
+    height: 350px;
+	border: thick double #696969;
+    padding: 6px;
 }
 
 .mu-about-right ul {}
@@ -583,7 +577,7 @@ iframe {
 }
 
 .mu-about-right ul li h3 {
-	border-bottom: 3px solid #e5e5e5;
+	border-bottom: 3px solid #8B0000;
 	color: #323232;
 	font-size: 35px;
 	display: inline-block;
@@ -594,25 +588,42 @@ iframe {
 
 .mu-about-right p {
 	font-size: 20px;
-    font-family: '고딕', sans-serif;
-    margin-top: 38px;
+	font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 18px;
 	width:535px;
 }
 
+.mu-about-under {
+	display: block;
+    height: 510px;
+    width: 65%;
+}
+
+.top-row {
+	width:100%;
+}
+
 .bottom-row{
-	display: -ms-flexbox;
+	width: 100%;
+    float: left;
+    height: 870px;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: 40px;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
 }
 
 #introduce {
 	font-size : 20px;
 	font-family: 'Noto Sans KR', sans-serif;
 	width:570px;
+}
+
+.about-img{
+	border: 3px solid #708090;
+	border-radius: 7px;
 }
 
 
@@ -689,7 +700,7 @@ iframe {
 
 .p-section {
 	width: 100%;
-    padding: 30px 205px;
+    padding: 35px 35px;
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -698,12 +709,12 @@ iframe {
 }
 
 .thumb {
-	width: 33%;
+	width: 29%;
     min-width: 300px;
-    height: 400px;
+    height: 390px;
     text-align: center;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 8px 10px;
 	
 }
 
@@ -748,11 +759,12 @@ iframe {
 }
 
 .p-section .pagination{
+	position: inherit;
+    display: block;
 	width: 100%;
-	float: left;
 	padding:15px;
 	text-align: center;
-	margin-left: 550px;
+	margin-top: 30px;
 	font-weight: bold;
 }
 .p-section .pagination div{
