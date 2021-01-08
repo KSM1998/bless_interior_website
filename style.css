@@ -352,31 +352,30 @@ iframe {
     left: 52%;
     width: 1030px;
     margin-left: -530px;
-    padding-top: 20px;
     padding-bottom: 34px;
-    padding: 50px 0;
     text-align: center;
     color: #fff;
     list-style: none;
+	margin-top:60px;
+	
 }
 
 #common-page-banner-text .small-text {
 	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 20px;
-    margin-bottom: 10px;
 	list-style: none;
 
 }
 
 #common-page-banner-text .big-text .Big-logo {
 	font-family: 'Taviraj', serif;
-	font-size : 64px;
+	font-size : 61px;
 	
 }
 
 #common-page-banner-text .big-text .Small-logo {
 	font-family: 'Taviraj', serif;
-	font-size: 64px;
+	font-size: 61px;
     padding-left: 35px;
 }
 
