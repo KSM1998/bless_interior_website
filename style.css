@@ -341,8 +341,8 @@ iframe {
 	
 	background-size : cover;
 	background-position : center center;
-	width : 100vw;
-	height : 35vh;
+	width : 100%;
+	height : 320px;
 }
 
 
@@ -378,6 +378,25 @@ iframe {
 	font-family: 'Taviraj', serif;
 	font-size: 64px;
     padding-left: 35px;
+}
+
+@media screen and(max-width:768px) {
+	
+	#common-page-top-container #common-page-banner-text {
+   		display:none;
+	}
+	
+	#common-page-banner-text .small-text {
+		font-size: 16px;
+	}
+	
+	#common-page-banner-text .big-text .Big-logo {
+		font-size : 32px;
+	}
+	
+	#common-page-banner-text .big-text .Small-logo {
+		display:none;
+	}
 }
 
 /*--------------------*/
@@ -870,16 +889,19 @@ iframe {
 /*--------------------*/
 
 #mu-google-map {
-	display: block;
-    float: left;
-    width: 43%;
-    margin-left: 550px;
+	width: 100%;
+    height: 700px;
+    display: inline;
     margin-bottom: 100px;
 }
 
 #mu-google-map iframe {
-	height: 450px;
-	width: 100%;
+	display: block;
+    height: 550px;
+    width: 700px;
+    left: 50%;
+    top: 50%;
+    margin: auto;
 }
 
 /*--------------------*/
