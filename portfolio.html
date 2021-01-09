@@ -81,7 +81,7 @@
 	<main id="p-main">
 		<header id="p-header">
 			<h2 class="p-logo">포트폴리오</h2>
-				<ul>
+				<ul class="p-menu">
 					<a href ="portfolio.html"><li class ="p-active">전체</li></a>
 					<li>화장실</li>
 					<li>싱크대</li>
@@ -164,7 +164,7 @@
 		
 		
 		<script>		
-			const buttons = document.querySelectorAll("li");
+			const buttons = document.querySelectorAll(".p-menu li");
 			const section = document.querySelectorAll(".thumb");
 			buttons.forEach(item => {
 				item.addEventListener('click', ()=>{
