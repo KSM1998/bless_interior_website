@@ -264,40 +264,6 @@ iframe {
 	cursor : pointer;
 }
 
-.navbar_toogleBtn {
-	display:none;
-	position:absolute;
-	right:32px;
-	font-size:24px;
-	color:#800000;
-}
-
-/* @media screen and(max-width: 768px) {
-	
-	.navbar {
-		flex-direction : column;
-		align-items: flex-start;
-		margin-right:0px;
-		padding:8px 12px;
-	}
-	
-	.navbar_menu {
-		display:none;
-		flex-direction : column;
-		align-items: center;
-		width:100%;
-	}
-	
-	.navbar_menu li {
-		text-align:center;
-	}
-	
-	.navbar_toogleBtn {
-		display:block;
-	
-	}
-} */
-
 
 #main-banner-text {
 	position: absolute;
@@ -379,24 +345,6 @@ iframe {
     padding-left: 35px;
 }
 
-@media screen and(max-width:768px) {
-	
-	#common-page-top-container #common-page-banner-text {
-   		display:none;
-	}
-	
-	#common-page-banner-text .small-text {
-		font-size: 16px;
-	}
-	
-	#common-page-banner-text .big-text .Big-logo {
-		font-size : 32px;
-	}
-	
-	#common-page-banner-text .big-text .Small-logo {
-		display:none;
-	}
-}
 
 /*--------------------*/
 /* 메인 홈페이지 포트폴리오 */
@@ -803,11 +751,16 @@ iframe {
 /* 견적문의 */
 /*--------------------*/
 
+#contact-us-main{
+	height:950px;
+}
+
 #mu-contact {
 	background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
+	margin-top:50px;
 }
 
 .mu-contact-area {
@@ -1094,15 +1047,15 @@ footer{
 .f-main-content{
 	margin-left: auto;
     margin-right: auto;
-    max-width: 1080px;
-    display: block;
+    max-width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     box-sizing: border-box;
 }
 
 .f-main-content .box{
-	padding: 10px 35px;
-    float: left;
-    width: 33.33%;
+	padding: 12px 45px;
     box-sizing: border-box;
 }
 
