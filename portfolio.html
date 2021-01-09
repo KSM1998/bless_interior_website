@@ -164,26 +164,55 @@
 		
 		
 		<script>		
-			const buttons = document.querySelectorAll(".p-menu li");
-			const section = document.querySelectorAll(".thumb");
-			buttons.forEach(item => {
-				item.addEventListener('click', ()=>{
-					buttons.forEach(item => {
-						item.clssName ="";
-					});
-					item.className ="active";
+			// const buttons = document.querySelectorAll(".p-menu li");
+			// const section = document.querySelectorAll(".thumb");
+			
+			// buttons.forEach(item => 
+			// {
+			// 	item.addEventListener('click', ()=>
+			// 	{
+			// 		buttons.forEach(item => 
+			// 		{
+			// 			item.clssName ="";
+			// 		});
 					
-					//show images
-					let values = item.textContent;
-					section.forEach(show => {
-							show.style.display = "none";
-						if(show.getAttribute("data-id") === values) {
-							show.style.display = "block";
-						}
-					});
+			// 		item.className ="active";
 					
-				});
+			// 		//show images
+			// 		let values = item.textContent;
+					
+			// 		section.forEach(show => 
+			// 		{
+			// 			show.style.display = "none";
+			// 			if(show.getAttribute("data-id") === values) 
+			// 			{
+			// 				show.style.display = "block";
+			// 			}
+			// 		});
+					
+			// 	});
 				
+			// });
+			
+			
+			var buttons = document.querySelectorAll(".p-menu li");
+			var section = document.querySelectorAll(".thumb");
+			buttons.forEach(function (item) {
+			  item.addEventListener('click', function () {
+				buttons.forEach(function (item) {
+				  item.clssName = "";
+				});
+				item.className = "active"; //show images
+
+				var values = item.textContent;
+				section.forEach(function (show) {
+				  show.style.display = "none";
+
+				  if (show.getAttribute("data-id") === values) {
+					show.style.display = "block";
+				  }
+				});
+			  });
 			});
 		</script>	
 	<!-- End Portfolio -->
