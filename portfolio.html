@@ -165,24 +165,24 @@
 		
 		<script>		
 			var buttons = document.querySelectorAll(".p-menu li");
-			var section = document.querySelectorAll(".thumb");
-			buttons.forEach(function (item) {
-			  item.addEventListener('click', function () {
-				buttons.forEach(function (item) {
-				  item.clssName = "";
-				});
-				item.className = "active"; //show images
+         	var section = document.querySelectorAll(".thumb");
 
-				var values = item.textContent;
-				section.forEach(function (show) {
-				  show.style.display = "none";
+       		 Array.prototype.forEach.call(buttons, function(item){
+          	item.addEventListener('click', function () {
+            Array.prototype.forEach.call(buttons, function(item){
+              item.clssName = "";
+            });
+            item.className = "active"; //show images
 
-				  if (show.getAttribute("data-id") === values) {
-					show.style.display = "block";
-				  }
-				});
-			  });
-			});
+            var values = item.textContent;
+            Array.prototype.forEach.call(section, function(show){
+              show.style.display = "none";
+              if (show.getAttribute("data-id") === values) {
+               show.style.display = "block";
+              }
+            });            
+           });
+         });
 		</script>	
 	<!-- End Portfolio -->
 
