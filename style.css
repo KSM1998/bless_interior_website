@@ -179,7 +179,9 @@ iframe {
 
 #main-top-container {
 	background : 
-		url("https://1.bp.blogspot.com/-AonWI90vnqg/X-wbOCGdEOI/AAAAAAAAAOc/SSaAirgYzgcLzwasLyM4Ny-6Ab2VQW1hwCLcBGAsYHQ/s1970/%25ED%2599%2588%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%2B%25EC%2582%25AC%25EC%25A7%2584%2B2.jpg") no-repeat;
+		
+		url("https://1.bp.blogspot.com/-xGvUazuZ2JU/YbKtA_RYykI/AAAAAAAAAWI/6CrUocE_elsRG1o2EF5pJet_W9ntvWPGwCNcBGAsYHQ/s1970/%25ED%2599%2588%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580%2B%25EC%2582%25AC%25EC%25A7%25845.jpg") no-repeat;
+	
 	
 	background-size : cover;
 	background-position : center center;
@@ -234,9 +236,9 @@ iframe {
 	position: absolute;
     top: 345px;
     left: 21%;
-    width: 58%;
-    padding: 50px 0;
-    background: rgba(67,1,1,1.35);
+    width: 55%;
+    padding: 55px 0;
+    background: rgba(53,1,1,1.35);
     text-align: center;
     color: #fff;
     list-style: none;
@@ -245,7 +247,7 @@ iframe {
 
 #main-banner-text .small-text {
 	font-family: 'Noto Sans KR', sans-serif;
-	font-size: 20px;
+	font-size: 22px;
     margin-bottom: 10px;
 	list-style: none;
 
@@ -253,13 +255,13 @@ iframe {
 
 #main-banner-text .big-text .Big-logo {
 	font-family: 'Taviraj', serif;
-	font-size : 64px;
+	font-size : 67px;
 	
 }
 
 #main-banner-text .big-text .Small-logo {
 	font-family: 'Taviraj', serif;
-	font-size: 64px;
+	font-size: 67px;
     padding-left: 35px;
 }
 
@@ -547,6 +549,7 @@ iframe {
 	list-style: none;
 	float: left;
 	margin-bottom: 25px;
+	text-align: center;
 }
 
 .about-right ul li h3 {
@@ -561,7 +564,7 @@ iframe {
 
 .about-right p {
 	font-size: 20px;
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Noto Sans KR';
     margin-top: 18px;
 	width:535px;
 }
