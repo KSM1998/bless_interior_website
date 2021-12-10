@@ -235,7 +235,7 @@ iframe {
 #main-banner-text {
 	position: absolute;
     top: 345px;
-    left: 21%;
+    left: 23%;
     width: 55%;
     padding: 55px 0;
     background: rgba(53,1,1,1.35);
@@ -838,10 +838,10 @@ iframe {
 }
 
 .search-bar{
-	width: 50%;
+	width: 45%;
     float: left;
-    margin-top: 30px;
-    margin-left: 200px;
+    margin-top: 115px;
+    margin-left: 170px;
 }
 
 .table td, .table th {
@@ -850,7 +850,52 @@ iframe {
     padding: 25px 0;
 }
 
+.table td a {
+	color:black;
+	font-weight : bold;
+}
 
+.button {
+	margin-top : 22px;
+	float:right;
+}
+
+.button .btn {
+	background-color:darkslategrey;
+	border-color:"darkslategrey";
+}
+
+.button .btn .btn-primary {
+	color:"fff";
+	background-color:"darkslategrey";
+	
+}
+/*--------------------*/
+/* 커뮤니티 공지사항 1 */
+/*--------------------*/
+
+.notice-container2 {
+	display: block;
+    height: 520px;
+    width: 780px;
+    margin: auto;
+}
+
+.notice-container2 .table {
+	margin-top : 100px;
+}
+
+.notice-container2 .table th{
+	text-align:center;
+	font-size:20px;
+	background-color:linen;
+	vertical-align:middle;
+}
+
+.notice-container2 .table td{
+	font-family:"Noto Sans KR";
+	font-size:16px;
+}
 
 /* Filter controls */
 
